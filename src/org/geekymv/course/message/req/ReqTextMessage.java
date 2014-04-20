@@ -1,11 +1,11 @@
 package org.geekymv.course.message.req;
 
 /**
- * 文本消息
+ * 鏂囨湰娑堟伅
  */
 public class ReqTextMessage extends ReqBaseMessage{
 	
-	private String Content;	 //	文本消息内容 
+	private String Content;	 //	鏂囨湰娑堟伅鍐呭 
 
 	public String getContent() {
 		return Content;

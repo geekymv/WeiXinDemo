@@ -5,12 +5,12 @@ import java.util.List;
 import org.geekymv.course.entity.Article;
 
 /**
- * »Ø¸´Í¼ÎÄÏûÏ¢Àà
+ * å›å¤å›¾æ–‡æ¶ˆæ¯ç±»
  */
 public class RespNewsMessage extends RespBaseMessage{
 	
-	private String ArticleCount;	// 	ÊÇ 	Í¼ÎÄÏûÏ¢¸öÊı£¬ÏŞÖÆÎª10ÌõÒÔÄÚ
-	private List<Article> Articles;	// 	ÊÇ 	¶àÌõÍ¼ÎÄÏûÏ¢ĞÅÏ¢£¬Ä¬ÈÏµÚÒ»¸öitemÎª´óÍ¼,×¢Òâ£¬Èç¹ûÍ¼ÎÄÊı³¬¹ı10£¬Ôò½«»áÎŞÏìÓ¦
+	private String ArticleCount;	// 	æ˜¯ 	å›¾æ–‡æ¶ˆæ¯ä¸ªæ•°ï¼Œé™åˆ¶ä¸º10æ¡ä»¥å†…
+	private List<Article> Articles;	// 	æ˜¯ 	å¤šæ¡å›¾æ–‡æ¶ˆæ¯ä¿¡æ¯ï¼Œé»˜è®¤ç¬¬ä¸€ä¸ªitemä¸ºå¤§å›¾,æ³¨æ„ï¼Œå¦‚æœå›¾æ–‡æ•°è¶…è¿‡10ï¼Œåˆ™å°†ä¼šæ— å“åº”
 	
 	public String getArticleCount() {
 		return ArticleCount;

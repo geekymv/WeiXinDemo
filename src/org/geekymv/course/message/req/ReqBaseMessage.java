@@ -1,19 +1,20 @@
 package org.geekymv.course.message.req;
 
 /**
- * ÏûÏ¢»ùÀà£¨ÆÕÍ¨ÓÃ»§ -> ¹«ÖÚÕÊºÅ£©
+ * æ¶ˆæ¯åŸºç±»ï¼ˆæ™®é€šç”¨æˆ· -> å…¬ä¼—å¸å·ï¼‰
  */
 public class ReqBaseMessage {
 
-	private String ToUserName; // ¿ª·¢ÕßÎ¢ĞÅºÅ
-	private String FromUserName; // ·¢ËÍ·½ÕÊºÅ£¨Ò»¸öOpenID£©
-	private long CreateTime; // ÏûÏ¢´´½¨Ê±¼ä £¨ÕûĞÍ£©
-	private String MsgType; // ÏûÏ¢ÀàĞÍ£¨text/image/location/link£©
-	private long MsgId; // ÏûÏ¢id£¬64Î»ÕûĞÍ
+	private String ToUserName; // å¼€å‘è€…å¾®ä¿¡å·
+	private String FromUserName; // å‘é€æ–¹å¸å·ï¼ˆä¸€ä¸ªOpenIDï¼‰
+	private long CreateTime; // æ¶ˆæ¯åˆ›å»ºæ—¶é—´ ï¼ˆæ•´å‹ï¼‰
+	private String MsgType; // æ¶ˆæ¯ç±»å‹ï¼ˆtext/image/location/linkï¼‰
+	private long MsgId; // æ¶ˆæ¯idï¼Œ64ä½æ•´å‹
 
 	public String getToUserName() {
 		return ToUserName;
 	}
+
 	public void setToUserName(String toUserName) {
 		ToUserName = toUserName;
 	}
@@ -21,6 +22,7 @@ public class ReqBaseMessage {
 	public String getFromUserName() {
 		return FromUserName;
 	}
+
 	public void setFromUserName(String fromUserName) {
 		FromUserName = fromUserName;
 	}
@@ -28,6 +30,7 @@ public class ReqBaseMessage {
 	public long getCreateTime() {
 		return CreateTime;
 	}
+
 	public void setCreateTime(long createTime) {
 		CreateTime = createTime;
 	}
@@ -35,6 +38,7 @@ public class ReqBaseMessage {
 	public String getMsgType() {
 		return MsgType;
 	}
+
 	public void setMsgType(String msgType) {
 		MsgType = msgType;
 	}
@@ -42,6 +46,7 @@ public class ReqBaseMessage {
 	public long getMsgId() {
 		return MsgId;
 	}
+
 	public void setMsgId(long msgId) {
 		MsgId = msgId;
 	}

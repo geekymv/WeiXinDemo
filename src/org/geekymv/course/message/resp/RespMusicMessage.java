@@ -3,7 +3,7 @@ package org.geekymv.course.message.resp;
 import org.geekymv.course.entity.Music;
 
 /**
- * »Ø¸´ÒôÀÖÏûÏ¢
+ * å›å¤éŸ³ä¹æ¶ˆæ¯
  */
 public class RespMusicMessage extends RespBaseMessage{
 	

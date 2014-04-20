@@ -4,13 +4,13 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 /**
- * ½«CreateTime ÒÔÃëÎªµ¥Î»-->×ª³ÉÆÕÍ¨Ê±¼ä 
+ * å°†CreateTime ä»¥ç§’ä¸ºå•ä½-->è½¬æˆæ™®é€šæ—¶é—´ 
  */
 public class CreateTimeSwap {
 	
 	public static String swapTime(String CreateTime){
 		
-		Long formatTime = Long.parseLong(CreateTime) * 1000;	//½«Ãë×ª³ÉºÁÃë
+		Long formatTime = Long.parseLong(CreateTime) * 1000;	//å°†ç§’è½¬æˆæ¯«ç§’
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		
 		return dateFormat.format(new java.util.Date(formatTime));

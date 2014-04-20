@@ -1,23 +1,25 @@
 package org.geekymv.course.message.req;
 
 /**
- * Í¼Æ¬ÏûÏ¢
+ * å›¾ç‰‡æ¶ˆæ¯
  */
-public class ReqImageMessage extends ReqBaseMessage{
-	
-	private String PicUrl;	// 	Í¼Æ¬Á´½Ó
-	private String MediaId;	// 	Í¼Æ¬ÏûÏ¢Ã½Ìåid£¬¿ÉÒÔµ÷ÓÃ¶àÃ½ÌåÎÄ¼şÏÂÔØ½Ó¿ÚÀ­È¡Êı¾İ¡£ 
-	
+public class ReqImageMessage extends ReqBaseMessage {
+
+	private String PicUrl; // å›¾ç‰‡é“¾æ¥
+	private String MediaId; // å›¾ç‰‡æ¶ˆæ¯åª’ä½“idï¼Œå¯ä»¥è°ƒç”¨å¤šåª’ä½“æ–‡ä»¶ä¸‹è½½æ¥å£æ‹‰å–æ•°æ®ã€‚
+
 	public String getPicUrl() {
 		return PicUrl;
 	}
+
 	public void setPicUrl(String picUrl) {
 		PicUrl = picUrl;
 	}
-	
+
 	public String getMediaId() {
 		return MediaId;
 	}
+
 	public void setMediaId(String mediaId) {
 		MediaId = mediaId;
 	}

@@ -1,13 +1,13 @@
 package org.geekymv.course.message.resp;
 
 /**
- * »Ø¸´ÊÓÆµÏûÏ¢Àà
+ * å›å¤è§†é¢‘æ¶ˆæ¯ç±»
  */
 public class RespVideoMessage extends RespBaseMessage{
 	
-	private String MediaId;		// 	ÊÇ 	Í¨¹ıÉÏ´«¶àÃ½ÌåÎÄ¼ş£¬µÃµ½µÄid
-	private String Title;		// 	·ñ 	ÊÓÆµÏûÏ¢µÄ±êÌâ
-	private String Description;	// 	·ñ 	ÊÓÆµÏûÏ¢µÄÃèÊö 
+	private String MediaId;		// 	æ˜¯ 	é€šè¿‡ä¸Šä¼ å¤šåª’ä½“æ–‡ä»¶ï¼Œå¾—åˆ°çš„id
+	private String Title;		// 	å¦ 	è§†é¢‘æ¶ˆæ¯çš„æ ‡é¢˜
+	private String Description;	// 	å¦ 	è§†é¢‘æ¶ˆæ¯çš„æè¿° 
 	
 	public String getMediaId() {
 		return MediaId;

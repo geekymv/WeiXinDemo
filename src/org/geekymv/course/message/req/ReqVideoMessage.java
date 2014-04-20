@@ -1,12 +1,12 @@
 package org.geekymv.course.message.req;
 
 /**
- * ÊÓÆµÏûÏ¢
+ * è§†é¢‘æ¶ˆæ¯
  */
 public class ReqVideoMessage extends ReqBaseMessage{
 	
-	private String MediaId;			// 	ÊÓÆµÏûÏ¢Ã½Ìåid£¬¿ÉÒÔµ÷ÓÃ¶àÃ½ÌåÎÄ¼şÏÂÔØ½Ó¿ÚÀ­È¡Êı¾İ¡£
-	private String ThumbMediaId;	// 	ÊÓÆµÏûÏ¢ËõÂÔÍ¼µÄÃ½Ìåid£¬¿ÉÒÔµ÷ÓÃ¶àÃ½ÌåÎÄ¼şÏÂÔØ½Ó¿ÚÀ­È¡Êı¾İ¡£ 
+	private String MediaId;			// 	è§†é¢‘æ¶ˆæ¯åª’ä½“idï¼Œå¯ä»¥è°ƒç”¨å¤šåª’ä½“æ–‡ä»¶ä¸‹è½½æ¥å£æ‹‰å–æ•°æ®ã€‚
+	private String ThumbMediaId;	// 	è§†é¢‘æ¶ˆæ¯ç¼©ç•¥å›¾çš„åª’ä½“idï¼Œå¯ä»¥è°ƒç”¨å¤šåª’ä½“æ–‡ä»¶ä¸‹è½½æ¥å£æ‹‰å–æ•°æ®ã€‚ 
 	
 	public String getMediaId() {
 		return MediaId;

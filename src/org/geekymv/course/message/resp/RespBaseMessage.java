@@ -1,14 +1,14 @@
 package org.geekymv.course.message.resp;
 
 /**
- * ÏûÏ¢»ùÀà£¨¹«ÖÚÕÊºÅ -> ÆÕÍ¨ÓÃ»§
+ * æ¶ˆæ¯åŸºç±»ï¼ˆå…¬ä¼—å¸å· -> æ™®é€šç”¨æˆ·
  */
 public class RespBaseMessage {
-									//ÊÇ·ñ±ØĞë
-	private String ToUserName; 		//ÊÇ 	½ÓÊÕ·½ÕÊºÅ£¨ÊÕµ½µÄOpenID£©
-	private String FromUserName; 	//ÊÇ 	¿ª·¢ÕßÎ¢ĞÅºÅ
-	private Long CreateTime; 		//ÊÇ 	ÏûÏ¢´´½¨Ê±¼ä £¨ÕûĞÍ£©
-	private String MsgType;		 	//ÊÇ 	ÏûÏ¢ÀàĞÍ	(text/music/news) 
+									//æ˜¯å¦å¿…é¡»
+	private String ToUserName; 		//æ˜¯ 	æ¥æ”¶æ–¹å¸å·ï¼ˆæ”¶åˆ°çš„OpenIDï¼‰
+	private String FromUserName; 	//æ˜¯ 	å¼€å‘è€…å¾®ä¿¡å·
+	private Long CreateTime; 		//æ˜¯ 	æ¶ˆæ¯åˆ›å»ºæ—¶é—´ ï¼ˆæ•´å‹ï¼‰
+	private String MsgType;		 	//æ˜¯ 	æ¶ˆæ¯ç±»å‹	(text/music/news) 
 	
 	public String getToUserName() {
 		return ToUserName;

@@ -9,12 +9,12 @@ import org.geekymv.course.util.CreateTimeSwap;
 import org.geekymv.course.util.MessageUtil;
 
 /**
- * ºËĞÄÒµÎñÀà
- * private String ToUserName; // ¿ª·¢ÕßÎ¢ĞÅºÅ
-	private String FromUserName; // ·¢ËÍ·½ÕÊºÅ£¨Ò»¸öOpenID£©
-	private long CreateTime; // ÏûÏ¢´´½¨Ê±¼ä £¨ÕûĞÍ£©
-	private String MsgType; // ÏûÏ¢ÀàĞÍ£¨text/image/location/link£©
-	private long MsgId; // ÏûÏ¢id£¬64Î»ÕûĞÍ
+ * æ ¸å¿ƒä¸šåŠ¡ç±»
+ * private String ToUserName; // å¼€å‘è€…å¾®ä¿¡å·
+	private String FromUserName; // å‘é€æ–¹å¸å·ï¼ˆä¸€ä¸ªOpenIDï¼‰
+	private long CreateTime; // æ¶ˆæ¯åˆ›å»ºæ—¶é—´ ï¼ˆæ•´å‹ï¼‰
+	private String MsgType; // æ¶ˆæ¯ç±»å‹ï¼ˆtext/image/location/linkï¼‰
+	private long MsgId; // æ¶ˆæ¯idï¼Œ64ä½æ•´å‹
  */
 public class CoreService {
 	
@@ -23,12 +23,12 @@ public class CoreService {
 		String respMessage = "";
 		
 		try {
-			//xmlÇëÇó½âÎö
+			//xmlè¯·æ±‚è§£æ
 			Map<String, String> requestMap = MessageUtil.parseXml(request);
 			
 		
-			String FromUserName = requestMap.get("FromUserName");	//ÆÕÍ¨ºÅ
-			String ToUserName = requestMap.get("ToUserName");		//¹«¹²ºÅ
+			String FromUserName = requestMap.get("FromUserName");	//æ™®é€šå·
+			String ToUserName = requestMap.get("ToUserName");		//å…¬å…±å·
 			String CreateTime = requestMap.get("CreateTime");
 		
 			String FromCreateTime = CreateTimeSwap.swapTime(CreateTime);
@@ -36,7 +36,7 @@ public class CoreService {
 			String MsgType = requestMap.get("MsgType");
 		
 			
-			//ÇëÇóÊ±ÎÄ±¾ÏûÏ¢
+			//è¯·æ±‚æ—¶æ–‡æœ¬æ¶ˆæ¯
 			if(MessageUtil.REQ_MESSAGE_TYPE_TEXT.equals(MsgType)){
 				
 				String Content = requestMap.get("Content");
@@ -48,11 +48,11 @@ public class CoreService {
 				textMessage.setCreateTime(new java.util.Date().getTime());
 				textMessage.setMsgType(MessageUtil.RESP_MESSAGE_TYPE_TEXT);
 				
-				textMessage.setContent("¶Ô·½·¢ËÍĞÅÏ¢µÄÀàĞÍ = " + MsgType + "\n" 
-						+ "¶Ô·½·¢ËÍĞÅÏ¢µÄÄÚÈİ = " + Content + "\n" 
-						+ "¶Ô·½·¢ËÍĞÅÏ¢µÄÊ±¼ä = " + FromCreateTime + "\n" 
-						+ "¹«¹²ºÅ = " + textMessage.getFromUserName() + "\n"
-						+ "·¢¸ø = " + textMessage.getToUserName() + "\n" 
+				textMessage.setContent("å¯¹æ–¹å‘é€ä¿¡æ¯çš„ç±»å‹ = " + MsgType + "\n" 
+						+ "å¯¹æ–¹å‘é€ä¿¡æ¯çš„å†…å®¹ = " + Content + "\n" 
+						+ "å¯¹æ–¹å‘é€ä¿¡æ¯çš„æ—¶é—´ = " + FromCreateTime + "\n" 
+						+ "å…¬å…±å· = " + textMessage.getFromUserName() + "\n"
+						+ "å‘ç»™ = " + textMessage.getToUserName() + "\n" 
 						
 						);
 				

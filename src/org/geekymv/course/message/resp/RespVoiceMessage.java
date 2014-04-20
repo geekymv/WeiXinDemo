@@ -1,11 +1,11 @@
 package org.geekymv.course.message.resp;
 
 /**
- * »Ø¸´ÓïÒôÏûÏ¢Àà
+ * å›å¤è¯­éŸ³æ¶ˆæ¯ç±»
  */
 public class RespVoiceMessage extends RespBaseMessage{
 	
-	private String MediaId;		// 	ÊÇ 	Í¨¹ıÉÏ´«¶àÃ½ÌåÎÄ¼ş£¬µÃµ½µÄid 
+	private String MediaId;		// 	æ˜¯ 	é€šè¿‡ä¸Šä¼ å¤šåª’ä½“æ–‡ä»¶ï¼Œå¾—åˆ°çš„id 
 
 	public String getMediaId() {
 		return MediaId;

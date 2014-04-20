@@ -13,23 +13,23 @@ import org.geekymv.course.util.SignUtil;
 
 
 /**
- * ºËĞÄÇëÇó´¦ÀíÀà
+ * æ ¸å¿ƒè¯·æ±‚å¤„ç†ç±»
  */
 public class CoreServlet extends HttpServlet {
 	private static final long serialVersionUID = 4440739483644821986L;
 
 	/**
-	 * È·ÈÏÇëÇóÀ´×ÔÎ¢ĞÅ·şÎñÆ÷
+	 * ç¡®è®¤è¯·æ±‚æ¥è‡ªå¾®ä¿¡æœåŠ¡å™¨
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String signature = request.getParameter("signature");	// Î¢ĞÅ¼ÓÃÜÇ©Ãû
-		String timestamp = request.getParameter("timestamp");	// Ê±¼ä´Á
-		String nonce = request.getParameter("nonce");	// Ëæ»úÊı
-		String echostr = request.getParameter("echostr");	// Ëæ»ú×Ö·û´®
+		String signature = request.getParameter("signature");	// å¾®ä¿¡åŠ å¯†ç­¾å
+		String timestamp = request.getParameter("timestamp");	// æ—¶é—´æˆ³
+		String nonce = request.getParameter("nonce");	// éšæœºæ•°
+		String echostr = request.getParameter("echostr");	// éšæœºå­—ç¬¦ä¸²
 
 		PrintWriter out = response.getWriter();
-		// Í¨¹ı¼ìÑésignature¶ÔÇëÇó½øĞĞĞ£Ñé£¬ÈôĞ£Ñé³É¹¦ÔòÔ­Ñù·µ»Øechostr£¬±íÊ¾½ÓÈë³É¹¦£¬·ñÔò½ÓÈëÊ§°Ü
+		// é€šè¿‡æ£€éªŒsignatureå¯¹è¯·æ±‚è¿›è¡Œæ ¡éªŒï¼Œè‹¥æ ¡éªŒæˆåŠŸåˆ™åŸæ ·è¿”å›echostrï¼Œè¡¨ç¤ºæ¥å…¥æˆåŠŸï¼Œå¦åˆ™æ¥å…¥å¤±è´¥
 		if (SignUtil.checkSignature(signature, timestamp, nonce)) {
 			out.print(echostr);
 		}
@@ -38,18 +38,18 @@ public class CoreServlet extends HttpServlet {
 	}
 
 	/**
-	 * ´¦ÀíÎ¢ĞÅ·şÎñÆ÷·¢À´µÄÏûÏ¢
+	 * å¤„ç†å¾®ä¿¡æœåŠ¡å™¨å‘æ¥çš„æ¶ˆæ¯
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		//½«ÇëÇó¡¢ÏìÓ¦µÄ±àÂë¾ùÉèÖÃÎªutf-8 ¿ÉÒÔ±ÜÃâÖĞÎÄÂÒÂë
+		//å°†è¯·æ±‚ã€å“åº”çš„ç¼–ç å‡è®¾ç½®ä¸ºutf-8 å¯ä»¥é¿å…ä¸­æ–‡ä¹±ç 
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
 		
-		//µ÷ÓÃºËĞÄÒµÎñÀà½ÓÊÕÏûÏ¢¡¢´¦ÀíÏûÏ¢
+		//è°ƒç”¨æ ¸å¿ƒä¸šåŠ¡ç±»æ¥æ”¶æ¶ˆæ¯ã€å¤„ç†æ¶ˆæ¯
 		String respMessage = CoreService.processRequest(request);
 
-		//ÏìÓ¦ÏûÏ¢
+		//å“åº”æ¶ˆæ¯
 		PrintWriter out = response.getWriter();
 		out.print(respMessage);
 		out.close();

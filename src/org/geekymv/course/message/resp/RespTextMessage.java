@@ -1,11 +1,11 @@
 package org.geekymv.course.message.resp;
 
 /**
- * »Ø¸´ÎÄ±¾ÏûÏ¢Àà
+ * å›å¤æ–‡æœ¬æ¶ˆæ¯ç±»
  */
 public class RespTextMessage extends RespBaseMessage{
 		
-	private String Content;		// 	ÊÇ 	»Ø¸´µÄÏûÏ¢ÄÚÈİ£¨»»ĞĞ£ºÔÚcontentÖĞÄÜ¹»»»ĞĞ£¬Î¢ĞÅ¿Í»§¶Ë¾ÍÖ§³Ö»»ĞĞÏÔÊ¾£© 
+	private String Content;		// 	æ˜¯ 	å›å¤çš„æ¶ˆæ¯å†…å®¹ï¼ˆæ¢è¡Œï¼šåœ¨contentä¸­èƒ½å¤Ÿæ¢è¡Œï¼Œå¾®ä¿¡å®¢æˆ·ç«¯å°±æ”¯æŒæ¢è¡Œæ˜¾ç¤ºï¼‰ 
 
 	public String getContent() {
 		return Content;
