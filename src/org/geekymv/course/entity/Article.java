@@ -2,14 +2,14 @@ package org.geekymv.course.entity;
 
 
 /**
- * ÎÄÕÂÀà
+ * æ–‡ç« ç±»
  */
 public class Article {
 	
-	private String Title;		// 	·ñ 	Í¼ÎÄÏûÏ¢±êÌâ
-	private String Description;	// 	·ñ 	Í¼ÎÄÏûÏ¢ÃèÊö
-	private String PicUrl; 		//	·ñ 	Í¼Æ¬Á´½Ó£¬Ö§³ÖJPG¡¢PNG¸ñÊ½£¬½ÏºÃµÄĞ§¹ûÎª´óÍ¼360*200£¬Ğ¡Í¼200*200
-	private String Url;			// 	·ñ 	µã»÷Í¼ÎÄÏûÏ¢Ìø×ªÁ´½Ó 
+	private String Title;		// 	ï¿½ï¿½ 	Í¼ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+	private String Description;	// 	ï¿½ï¿½ 	Í¼ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+	private String PicUrl; 		//	ï¿½ï¿½ 	Í¼Æ¬ï¿½ï¿½ï¿½Ó£ï¿½Ö§ï¿½ï¿½JPGï¿½ï¿½PNGï¿½ï¿½Ê½ï¿½ï¿½ï¿½ÏºÃµï¿½Ğ§ï¿½ï¿½Îªï¿½ï¿½Í¼360*200ï¿½ï¿½Ğ¡Í¼200*200
+	private String Url;			// 	ï¿½ï¿½ 	ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ 
 	
 	public String getTitle() {
 		return Title;

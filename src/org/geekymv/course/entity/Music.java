@@ -1,15 +1,15 @@
 package org.geekymv.course.entity;
 
 /**
- * ÒôÀÖÀà
+ * éŸ³ä¹ç±»
  */
 public class Music {
 	
-	private String Title;			// 	·ñ 	ÒôÀÖ±êÌâ
-	private String Description;		// 	·ñ 	ÒôÀÖÃèÊö
-	private String MusicURL;		// 	·ñ 	ÒôÀÖÁ´½Ó
-	private String HQMusicUrl; 		//·ñ 	¸ßÖÊÁ¿ÒôÀÖÁ´½Ó£¬WIFI»·¾³ÓÅÏÈÊ¹ÓÃ¸ÃÁ´½Ó²¥·ÅÒôÀÖ
-	private String ThumbMediaId;	// 	ÊÇ 	ËõÂÔÍ¼µÄÃ½Ìåid£¬Í¨¹ıÉÏ´«¶àÃ½ÌåÎÄ¼ş£¬µÃµ½µÄid 
+	private String Title;			// 	ï¿½ï¿½ 	ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½
+	private String Description;		// 	ï¿½ï¿½ 	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String MusicURL;		// 	ï¿½ï¿½ 	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String HQMusicUrl; 		//ï¿½ï¿½ 	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½WIFIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String ThumbMediaId;	// 	ï¿½ï¿½ 	ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ã½ï¿½ï¿½idï¿½ï¿½Í¨ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½Ã½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½id 
 	
 	public String getTitle() {
 		return Title;
