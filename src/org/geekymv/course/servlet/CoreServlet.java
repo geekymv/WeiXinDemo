@@ -16,6 +16,7 @@ import org.geekymv.course.util.SignUtil;
  * 核心请求处理类
  */
 public class CoreServlet extends HttpServlet {
+	
 	private static final long serialVersionUID = 4440739483644821986L;
 
 	/**
@@ -55,7 +56,6 @@ public class CoreServlet extends HttpServlet {
 		out.close();
 
 	}
-
 }
 
 
