@@ -12,23 +12,21 @@ public class AccessToken {
 	 * 
 	 * 7200
 	 */
-	private String access_token; // 获取到的凭证
-	private int expires_in; // 凭证有效时间，单位：秒
-
-	public String getAccess_token() {
-		return access_token;
+	private String token; // 获取到的凭证
+	private int expiresIn; // 凭证有效时间，单位：秒
+	
+	public String getToken() {
+		return token;
+	}
+	public void setToken(String token) {
+		this.token = token;
+	}
+	public int getExpiresIn() {
+		return expiresIn;
+	}
+	public void setExpiresIn(int expiresIn) {
+		this.expiresIn = expiresIn;
 	}
 
-	public void setAccess_token(String access_token) {
-		this.access_token = access_token;
-	}
-
-	public int getExpires_in() {
-		return expires_in;
-	}
-
-	public void setExpires_in(int expires_in) {
-		this.expires_in = expires_in;
-	}
-
+	
 }
